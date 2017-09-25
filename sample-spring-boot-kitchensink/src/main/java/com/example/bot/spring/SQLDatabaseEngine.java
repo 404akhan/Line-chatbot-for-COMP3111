@@ -39,13 +39,13 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 				stmt.close();
 				stmt2.close();
 				connection.close();
-				return result;
+				return result + v1;
 			}
 		}
 		rs.close();
 		stmt.close();
 		connection.close();
-		return result;
+		throw new Exception("NOT FOUND");
 //		
 //		while (rs.next()) {
 //			System.out.println("ID: " + rs.getInt(1) + "\tkeyword: " + rs.getString(2) +"\tresponse: "+ rs.getString(3));
