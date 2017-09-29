@@ -39,7 +39,7 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 				stmt.close();
 				stmt2.close();
 				connection.close();
-				return result + v1;
+				return result + " " + v1;
 			}
 		}
 		rs.close();
